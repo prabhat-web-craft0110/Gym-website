@@ -2,67 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Power Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PowerFit Gym</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="overlay">
-      <h1>Power Gym</h1>
-      <p>Transform Your Body, Transform Your Life</p>
-      <a href="#contact" class="btn">Join Now</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Power<span>Fit</span></div>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#plans">Plans</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-icons">
+    <i class="fas fa-moon" id="themeToggle"></i>
+    <i class="fas fa-bars" id="menuToggle"></i>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Build Your <span>Body</span></h1>
+    <p>Train Hard • Stay Strong</p>
+    <a href="#plans" class="btn">Join Now</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="about-container">
+    <img src="images/about.jpg" alt="">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        PowerFit Gym offers modern equipment, expert trainers and
+        a motivating environment to reach your fitness goals.
+      </p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <div class="card">💪 Weight Training</div>
-      <div class="card">🔥 Cardio Fitness</div>
-      <div class="card">🧘 Personal Coaching</div>
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="service-box">
+    <div>Personal Training</div>
+    <div>Weight Training</div>
+    <div>Cardio Workout</div>
+    <div>Nutrition Guidance</div>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="section" id="plans">
+  <h2 class="section-title">Membership Plans</h2>
+  <div class="plan-box">
+    <div class="plan">
+      <h3>Basic</h3>
+      <p>₹999 / Month</p>
+      <button>Choose Plan</button>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Why Choose Power Gym?</h2>
-        <p>
-          Power Gym is not just a gym — it's a lifestyle.
-          With modern equipment, certified trainers, and a motivating
-          environment, we help you become the best version of yourself.
-        </p>
-        <ul>
-          <li>✔ Experienced Trainers</li>
-          <li>✔ Modern Equipment</li>
-          <li>✔ Friendly Environment</li>
-        </ul>
-      </div>
-      <div class="about-img"></div>
+    <div class="plan gold">
+      <h3>Premium</h3>
+      <p>₹2499 / Month</p>
+      <button>Choose Plan</button>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form onsubmit="handleSubmit(event)">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p id="msg"></p>
-  </section>
+    <div class="plan">
+      <h3>Annual</h3>
+      <p>₹9999 / Year</p>
+      <button>Choose Plan</button>
+    </div>
+  </div>
+</section>
 
-  <!-- WHATSAPP -->
-  <a href="https://wa.me/919999999999" class="whatsapp" target="_blank">
-    💬
-  </a>
+<!-- CONTACT (SAFE & FINAL) -->
+<section class="section contact" id="contact">
+  <h2 class="section-title">Contact Us</h2>
 
-  <script src="script.js"></script>
+  <div class="contact-card">
+    <p>📍 Your City, India</p>
+    <p>📞 +91 XXXXX XXXXX</p>
+
+    <div class="social-icons">
+      <a href="#" class="social whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
