@@ -57,8 +57,16 @@ body{
   cursor:pointer;
   color:var(--gold);
 }
+/* Hamburger menu */
+.menu-toggle {
+  display: none; /* desktop me hide */
+  font-size: 30px;
+  color: #d4af37; /* golden */
+  cursor: pointer;
+}
 
-#menuToggle{display:none;}
+
+/* #menuToggle{display:none;} */
 
 /* HERO */
 .hero{
@@ -247,4 +255,237 @@ body{
 .contact-form button:hover {
   background: gold;
   transform: scale(1.05);
+}
+/* CONTACT LAYOUT FIX */
+.contact-wrapper{
+  display:flex;
+  gap:40px;
+  justify-content:center;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.contact-card{
+  flex:1;
+  min-width:280px;
+  max-width:420px;
+}
+
+.contact-info{
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+.full-btn{
+  width:100%;
+  text-align:center;
+  margin-top:25px;
+}
+
+/* FORM LOOK UPGRADE */
+.contact-form input,
+.contact-form textarea{
+  background:#000;
+  color:#fff;
+  border:1px solid var(--gold);
+}
+
+.light .contact-form input,
+.light .contact-form textarea{
+  background:#fff;
+  color:#000;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .contact-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+.map-container{
+  max-width:1000px;
+  margin:auto;
+  border:3px solid var(--gold);
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.map-container iframe{
+  width:100%;
+  height:350px;
+  border:none;
+}
+.trust-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.trainer-card,
+.review-card{
+  background:var(--card);
+  border:2px solid var(--gold);
+  border-radius:15px;
+  padding:25px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.trainer-card img{
+  width:160px;
+  height:160px;
+  object-fit:cover;
+  border-radius:50%;
+  margin:15px auto;
+  display:block;
+  border:3px solid var(--gold);
+}
+
+
+.trainer-card span{
+  color:var(--gold);
+  font-weight:bold;
+}
+
+.trainer-card:hover,
+.review-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px rgba(255,215,0,0.4);
+}
+.trainer-card,
+.review-card{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.review-card p{
+  font-size:15px;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+.review-card h4{
+  color:var(--gold);
+  margin-bottom:5px;
+}
+
+.review-card span{
+  font-size:14px;
+  opacity:0.85;
+}
+.trust-box{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  align-items:stretch;
+}
+/* =========================
+   RESPONSIVE START
+========================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #000;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul li {
+    padding: 15px 0;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 90%;
+    margin-top: 25px;
+  }
+
+  /* Services */
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  /* Plans */
+  .plans {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-box {
+    flex-direction: column;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #000;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
 }

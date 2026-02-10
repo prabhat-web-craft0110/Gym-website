@@ -25,3 +25,6 @@ themeToggle.onclick = () => {
   document.body.style.color = dark ? "#000" : "#fff";
   dark = !dark;
 };
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}

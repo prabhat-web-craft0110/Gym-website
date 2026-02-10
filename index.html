@@ -9,13 +9,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
+  <title>Premium Fitness Trainer Website | Personal Gym Trainer</title>
+
+<meta name="description" content="Professional personal trainer gym website with modern design, trust reviews, WhatsApp contact and location support.">
+
+<meta name="keywords" content="gym trainer website, personal trainer website, fitness coach site, gym landing page">
+
+<meta name="author" content="Your Brand Name">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">Power<span>Fit</span></div>
+  <div class="logo">PowerFit</div>
 
+  <!-- HAMBURGER ICON -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- NAV LINKS -->
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -23,12 +36,8 @@
     <li><a href="#plans">Plans</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-
-  <div class="nav-icons">
-    <i class="fas fa-moon" id="themeToggle"></i>
-    <i class="fas fa-bars" id="menuToggle"></i>
-  </div>
 </nav>
+
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -88,44 +97,108 @@
   </div>
 </section>
 
-<!-- CONTACT (SAFE & FINAL) -->
+<!-- CONTACT (FINAL & CLEAN) -->
 <section class="section contact" id="contact">
   <h2 class="section-title">Contact Us</h2>
 
-  <div class="contact-card">
-    <p>📍 Your City, India</p>
-    <p>📞 +91 XXXXX XXXXX</p>
+  <div class="contact-wrapper">
 
-    <div class="social-icons">
-      <a href="#" class="social whatsapp"><i class="fab fa-whatsapp"></i></a>
-      <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social facebook"><i class="fab fa-facebook"></i></a>
+    <!-- LEFT: INFO + SOCIAL + WHATSAPP -->
+    <div class="contact-card">
+      <p class="contact-info">📍 Your City, India</p>
+      <p class="contact-info">📞 +91 XXXXX XXXXX</p>
+
+      <div class="social-icons">
+        <a href="https://wa.me/917275763741" class="social whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/17uwTXGnQn/" class="social facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+
+      <a href="https://wa.me/917275763741?text=Hello%20I%20want%20to%20join%20your%20gym"
+         target="_blank"
+         class="btn whatsapp-btn full-btn">
+         Chat on WhatsApp
+      </a>
     </div>
-    <div>
-    <a href="https://wa.me/917275763741?text=Hello%20I%20want%20to%20join%20your%20gym"
-   target="_blank"
-   class="btn whatsapp-btn">
-   Join on WhatsApp
-</a>
-</div>
-<div>
-<form action="https://formsubmit.co/prabhat.pkr012@gmail.com" method="POST" class="contact-form">
 
-  <input type="text" name="name" placeholder="Your Name" required>
-  
-  <input type="tel" name="phone" placeholder="Phone Number" required>
-  
-  <textarea name="message" placeholder="Your Message" required></textarea>
+    <!-- RIGHT: CONTACT FORM -->
+    <div class="contact-card">
+      <form action="https://formsubmit.co/prabhat.pkr012@gmail.com" method="POST" class="contact-form">
 
-  <button type="submit">Send Message</button>
+        <input type="hidden" name="_subject" value="New Gym Enquiry">
+        <input type="hidden" name="_captcha" value="false">
 
-</form>
-</div>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
 
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
   </div>
 </section>
 
+</section>
+<!-- GOOGLE MAP -->
+<section class="section">
+  <h2 class="section-title">Find Us</h2>
+
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.806046106397!2d82.50781837437854!3d25.24345682982731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fe8fb74faf663%3A0x45e95343af4e2ed!2sT.S.K%20Campus!5e0!3m2!1sen!2sin!4v1770712018714!5m2!1sen!2sin"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <!-- TRUST SECTION -->
+<section class="section trust">
+  <h2 class="section-title">Why Trust PowerFit</h2>
+
+  <div class="trust-box">
+
+    <!-- TRAINER -->
+    <div class="trainer-card">
+      <img src="images/trainer.jpg" alt="Trainer">
+      <h3>Rahul Verma</h3>
+      <p>Certified Fitness Trainer</p>
+      <span>5+ Years Experience</span>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="review-card">
+      <p>"Best gym in the area. Trainers are very supportive!"</p>
+      <h4>⭐ ⭐ ⭐ ⭐ ⭐</h4>
+      <span>- Aman Singh</span>
+    </div>
+
+    <div class="review-card">
+      <p>"Amazing transformation in just 3 months."</p>
+      <h4>⭐ ⭐ ⭐ ⭐ ⭐</h4>
+      <span>- Rohit Sharma</span>
+    </div>
+
+    <div class="review-card">
+      <p>"Clean gym, modern machines and great vibe."</p>
+      <h4>⭐ ⭐ ⭐ ⭐ ⭐</h4>
+      <span>- Neha Patel</span>
+    </div>
+
+  </div>
+</section>
+
+</section>
+
+
 <script src="script.js"></script>
+
+<p>© 2026 PowerFit Gym. All Rights Reserved.</p>
+
+<div class="footer-links">
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms & Conditions</a>
+</div>
+
 </body>
 </html>
