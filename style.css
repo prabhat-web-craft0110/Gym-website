@@ -85,6 +85,19 @@ body{
   color:#000;
   text-decoration:none;
 }
+.hero{
+  min-height: calc(100vh - 70px);
+  background: url(images/hero.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 120px 8% 60px;
+}
+
+.hero-content{
+  max-width: 500px;
+}
+
 
 /* SECTIONS */
 .section{
@@ -489,3 +502,19 @@ body{
     padding: 15px 0;
   }
 }
+@media (max-width: 768px){
+  .hero{
+    min-height: auto;
+    padding: 140px 6% 80px;
+  }
+
+  .hero h1{
+    font-size: 32px;
+  }
+
+  .btn{
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
+
